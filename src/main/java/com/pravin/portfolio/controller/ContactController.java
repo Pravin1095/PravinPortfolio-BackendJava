@@ -19,6 +19,6 @@ public class ContactController {
     @PostMapping(path = "contact", consumes={"application/json"})
     public String addContact(@RequestBody ContactDetailsModel contactDetails){
 service.addContact(contactDetails);
-return "Your Contact has been saved successfully";
+return "Success";
     }
 }
