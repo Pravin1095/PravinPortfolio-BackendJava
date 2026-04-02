@@ -1,0 +1,32 @@
+# Build output (we build inside Docker)
+target/
+
+# Git files
+.git
+.gitignore
+
+# Node (if frontend exists in same repo)
+node_modules/
+
+# Logs
+*.log
+
+# Environment / secrets
+.env
+.env.*
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker (optional)
+Dockerfile
+docker-compose.yml
+
+# Misc
+README.md
