@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@CrossOrigin({"http://localhost:3000","${FRONTEND}"})
+@CrossOrigin(origins = "${FRONTEND:http://localhost:3000}") //FallBack url is localhost:3000
 public class ContactController {
 
     @Autowired
